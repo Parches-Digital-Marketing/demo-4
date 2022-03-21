@@ -1,0 +1,29 @@
+.gallery-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  .gallery-section {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    .gallery {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      white-space: nowrap;
+      transition: all 2.5s;
+      width: 100%;
+      height: 100%;
+      .gallery__item {
+        display: inline;
+        .gallery__image {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
