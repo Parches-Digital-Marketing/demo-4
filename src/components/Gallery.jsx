@@ -12,7 +12,6 @@ export default function Gallery() {
   const delay = 2500;
 
   const reset = () => {
-    console.log('cambiando');
     if (timeout.current) clearTimeout(timeout.current);
   };
 

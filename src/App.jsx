@@ -1,13 +1,17 @@
-import About from "./sections/About"
-import Home from "./sections/Home"
 import Navbar from "./sections/Navbar"
+import Home from "./sections/Home"
+import About from "./sections/About"
+import Plans from "./sections/Plans"
 
 export default function App(){
     return (
         <div className="app">
             <Navbar />
-            <Home />
-            <About />
+            <div className="body">
+                <Home />
+                <About />
+                <Plans />
+            </div>
         </div>
     )
 }
