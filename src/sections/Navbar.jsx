@@ -16,10 +16,10 @@ export default function Navbar() {
                             <li className="navbar-list__item">Inicio</li>
                         </Link>
                         <Link activeClass="active" className="navbar-list__link" to="about" spy={true} isDynamic={true} smooth={true} duration={500}>
-                            <li className="navbar-list__item">Quienes somos</li>
+                            <li className="navbar-list__item">Nosotros</li>
                         </Link>
-                        <Link activeClass="active" className="navbar-list__link" to="plans" spy={true} isDynamic={true} smooth={true} duration={500}>
-                            <li className="navbar-list__item">Planes</li>
+                        <Link activeClass="active" className="navbar-list__link" to="services" spy={true} isDynamic={true} smooth={true} duration={500}>
+                            <li className="navbar-list__item">Servicios</li>
                         </Link>
                         <Link activeClass="active" className="navbar-list__link" to="contact" spy={true} isDynamic={true} smooth={true} duration={500}>
                             <li className="navbar-list__item">Contacto</li>

@@ -1,5 +1,6 @@
 import Gallery from "../components/Gallery"
 import Button from '../components/Button';
+import { Link } from 'react-scroll'
 
 export default function Home() {
     return (
@@ -11,7 +12,9 @@ export default function Home() {
                         <h2 className="home__title">Gimnasio Tachankos</h2>
                         <h3 className="home__subtitle">Un gimnasio para vos</h3>
                         <p className="home__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum dignissimos molestiae dolores nesciunt! Amet inventore quia, autem nostrum, corporis veniam doloremque, voluptas aperiam officia quaerat placeat officiis ex atque. Ex.</p>
-                        <Button text={"Ver planes disponibles"}></Button>
+                        <Link activeClass="active" className="home__link" to="services" spy={true} smooth={true} duration={500}>
+                            <Button text={"Ver servicios"}></Button>
+                        </Link>
                     </div>
                 </div>
             <div className="home-right">

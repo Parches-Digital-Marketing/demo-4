@@ -1,20 +1,13 @@
 
-export default function Card({time, price, features}) {
-    console.log(time, price)
+export default function Card({title, description, image}) {
     return (
         <div className="card">
             <div className="card-header">
-                <h2 className="card-header__title">{time}</h2>
+                <img className="card-header__image" src={image} alt="service"/>
+                <h3 className="card-header__title">{title}</h3>
             </div>
             <div className="card-body">
-                <h3 className="card-body__title">{price}</h3>
-                <ul className="card-body__list">
-                    {
-                        features.map((feature, index) => {
-                            return <li key={index} className="card-body__item">{feature}</li>
-                        })
-                    }
-                </ul>
+                <p className="card-body-description">{description}</p>
             </div>
         </div>
     )

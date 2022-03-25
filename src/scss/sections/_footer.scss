@@ -1,0 +1,20 @@
+.footer-section{
+    width: 100%;
+    height: 100%;
+    background-color: $blackColor;
+    .footer-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        .footer__copyright{
+            text-align: center;
+            color: $whiteColor;
+            font-size: 16px;
+            .footer__enterprise{
+                color: $secondaryColor;
+            }
+        }
+    }
+}

@@ -1,0 +1,68 @@
+.services-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: $blackColor;
+    .services-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        max-width: $maxSectionWidth;
+        .services-header{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            .services__title{
+                text-align: center;
+                color: $primaryColor;
+                text-transform: uppercase;
+                font-size: 46px;
+            }
+            .services__description{
+                color: $whiteColor;
+                font-size: 18px;
+            }
+        }
+        .services-cards{
+            display: flex;
+            flex-direction: row;
+            gap: 100px;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 720px) {
+    .services-section{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        .services-container{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            .services-cards{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+}

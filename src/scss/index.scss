@@ -27,10 +27,11 @@ html {
             height: min-content;
             position: relative;
             background-color: $blackColor;
+            transition: all 0.85s ease;
             .scroll{
-                top:0;
+                top: 0;
+                height: 500px;
                 position: absolute;
-                height: 100%;
                 width: 100%;
             }
             .body{
@@ -42,12 +43,19 @@ html {
         height: 100%;
     }
 }
+@media screen and (min-width: 320px) and (max-width: 720px) {
+    .body{
+        margin-top: 100px;
+    }
+}
 
 // sections imports
 @import "./sections/navbar";
 @import "./sections/home";
 @import "./sections/about";
-@import "./sections/plans";
+@import "./sections/services";
+@import "./sections/contact";
+@import "./sections/footer";
 
 // components imports
 @import "./components/gallery";

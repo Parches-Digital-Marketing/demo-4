@@ -1,7 +1,9 @@
 import Navbar from "./sections/Navbar"
 import Home from "./sections/Home"
 import About from "./sections/About"
-import Plans from "./sections/Plans"
+import Services from "./sections/Services"
+import Contact from "./sections/Contact"
+import Footer from "./sections/Footer"
 
 export default function App(){
     return (
@@ -10,8 +12,10 @@ export default function App(){
             <div className="body">
                 <Home />
                 <About />
-                <Plans />
+                <Services />
+                <Contact />
             </div>
+            <Footer/>
         </div>
     )
 }

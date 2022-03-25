@@ -25,6 +25,9 @@
                 display: flex;
                 align-items: center;
                 flex-direction: column;
+                .home__link {
+                    width: min-content;
+                }
                 .home__title{
                     color: $primaryColor;
                     text-transform: uppercase;
